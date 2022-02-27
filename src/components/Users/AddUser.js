@@ -3,6 +3,7 @@ import { useState } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
+import Wrapper from "../Helpers/Wrapper";
 import styles from "./AddUser.module.css";
 
 function AddUser(props) {
@@ -44,7 +45,7 @@ function AddUser(props) {
   };
 
   return (
-    <div>
+    <Wrapper>
       {error && (
         <ErrorModal
           onDialogClose={errorDialogHandler}
@@ -73,7 +74,7 @@ function AddUser(props) {
           {/* <button type="submit">Add User</button> */}
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 }
 
