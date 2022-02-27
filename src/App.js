@@ -13,10 +13,10 @@ function App() {
     { name: "Karl Marx", age: 50 },
   ];
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 

@@ -6,7 +6,7 @@ function ErrorModal(props) {
   //     props.onDialogClose();
   //   };
   return (
-    <div>
+    <>
       <div onClick={props.onDialogClose} className={styles.backdrop}></div>
       <Card className={styles.modal}>
         <header className={styles.header}>
@@ -19,7 +19,7 @@ function ErrorModal(props) {
           <Button onClick={props.onDialogClose}>Okay</Button>
         </footer>
       </Card>
-    </div>
+    </>
   );
 }
 
